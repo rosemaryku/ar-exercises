@@ -9,4 +9,14 @@ require_relative './exercise_6'
 puts "Exercise 7"
 puts "----------"
 
-# Your code goes here ...
+
+puts "What is the name of your store?"
+@store = gets.chomp
+
+# Missing entries 
+@new_store = Store.create(name: @store)
+
+# Complete entries 
+@new_store = Store.create(name: @store, annual_revenue: 900000, mens_apparel: true)
+
+# puts @new_store
